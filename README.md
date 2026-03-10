@@ -38,32 +38,6 @@ This project approximates beam deflection by discretizing the beam into evenly s
 
 Turbo mode disables verbose solver output to improve runtime performance when solving larger systems. The numerical solution remains unchanged; only the amount of printed output differs.
 
-## File Structure
-
-finite-beam-deflection-solver
-│
-├── Apps
-│   └── beamer.cpp
-│
-├── Examples
-│   └── beam_results.pdf
-│
-├── Include
-│   ├── beam.hpp
-│   ├── matrix.hpp
-│   ├── vector.hpp
-│   └── timer.hpp
-│
-├── Notebooks
-│   └── plots.ipynb
-│
-├── Source
-│   ├── beam.cpp
-│   ├── matrix.cpp
-│   └── vector.cpp
-│
-└── README.md
-
 ## Mathematical Model
 
 The beam deflection is modeled using the Euler–Bernoulli beam equation. The continuous differential equation is discretized using a finite difference approximation, resulting in a linear system of equations that is solved iteratively using the Gauss-Seidel method.
